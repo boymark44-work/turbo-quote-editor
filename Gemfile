@@ -32,6 +32,8 @@ gem "bootsnap", require: false
 # Simple From Gem
 gem "simple_form", "~> 5.1.0"
 
+# Slim-Rails Template for Views
+gem "slim-rails"
 
 # Optional: Redis for Action Cable in production
 # gem "redis", ">= 4.0.1"
