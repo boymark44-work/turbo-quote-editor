@@ -21,12 +21,12 @@ class QuotesTest < ApplicationSystemTestCase
     # When we click on the link with the text "New quote", 
     # we expect to land on a page with the title "New quote"
     click_on "New quote"
-    assert_select "h1", text: "New quote"
+    assert_selector "h1", text: "New quote"
 
     # When we fill in the name input with "Capybara quote",
     # and we click on "Create quote"
     fill_in "Name", with: "Capybara quote"
-    click_on "Create quote"
+    click_on "Create Quote"
 
     # We expect to be back on the page with the title "Quotes",
     # and to see our "Capybara quote" added to that list
@@ -51,7 +51,7 @@ class QuotesTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Edit quote"
 
     fill_in "Name", with: "Updated quote"
-    click_on "Update quote"
+    click_on "Update Quote"
 
     assert_selector "h1", text: "Quotes"
     assert_text "Updated quote"
@@ -60,7 +60,7 @@ class QuotesTest < ApplicationSystemTestCase
   # Test for "Destroying a quote"
   test "Destroying a quote" do
     visit quotes_path
-    assert_text @quotes.name   
+    assert_text @quote.name   
 
     click_on "Delete", match: :first
     assert_no_text @quote.name
