@@ -29,7 +29,8 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 # Boot performance
 gem "bootsnap", require: false
 
-# 
+# Simple From Gem
+gem "simple_form", "~> 5.1.0"
 
 
 # Optional: Redis for Action Cable in production
