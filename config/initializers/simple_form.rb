@@ -53,14 +53,14 @@ SimpleForm.setup do |config|
 
     ## Inputs
     # b.use :input, class: 'input', error_class: 'is-invalid', valid_class: 'is-valid'
-    b.use :label_input
+    #b.use :label_input
     b.use :hint,  wrap_with: { tag: :span, class: :hint }
     b.use :error, wrap_with: { tag: :span, class: :error }
 
     
     ## Components for forms: 
     b.use :label, class: "visually-hidden"
-    b.yser :input, class: "form__input", error_class: "form__input--invalid"
+    b.use :input, class: "form__input", error_class: "form__input--invalid"
 
 
 
