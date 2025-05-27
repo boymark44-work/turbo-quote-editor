@@ -57,6 +57,13 @@ SimpleForm.setup do |config|
     b.use :hint,  wrap_with: { tag: :span, class: :hint }
     b.use :error, wrap_with: { tag: :span, class: :error }
 
+    
+    ## Components for forms: 
+    b.use :label, class: "visually-hidden"
+    b.yser :input, class: "form__input", error_class: "form__input--invalid"
+
+
+
     ## full_messages_for
     # If you want to display the full error message for the attribute, you can
     # use the component :full_error, like:
