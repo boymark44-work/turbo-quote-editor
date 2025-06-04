@@ -11,7 +11,8 @@ class QuotesTest < ApplicationSystemTestCase
   
   # Setup for the first entry
   setup do
-    @quote = quotes(:first) # Reference to the first fixture quote
+    # Order the quotes from the newest first
+    @quote = Quote.ordered.first
   end
 
   # First Test: Showing a quote
