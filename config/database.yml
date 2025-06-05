@@ -22,6 +22,10 @@ default: &default
 development:
   <<: *default
   database: quote_editor_development
+  username: postgres
+  password: password
+  host: localhost
+  port: 5432
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -53,9 +57,16 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
+
+# Modified the Test Database to be the same as the Development since it is run using Docker
 test:
   <<: *default
   database: quote_editor_test
+  username: postgres
+  password: password
+  host: localhost
+  port: 5432
+
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -77,8 +88,8 @@ test:
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
-production:
-  <<: *default
-  database: quote_editor_production
-  username: quote_editor
-  password: <%= ENV["QUOTE_EDITOR_DATABASE_PASSWORD"] %>
+# production:
+#   <<: *default
+#   database: quote_editor_production
+#   username: quote_editor
+#   password: <%= ENV["QUOTE_EDITOR_DATABASE_PASSWORD"] %>
