@@ -67,4 +67,5 @@ group :test do
   # System testing
   gem "capybara"
   gem "selenium-webdriver"
+  gem "minitest-reporters"
 end

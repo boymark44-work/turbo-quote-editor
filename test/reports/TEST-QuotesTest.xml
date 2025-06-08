@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="QuotesTest" filepath="test/system/quotes_test.rb" skipped="0" failures="0" errors="0" tests="4" assertions="11" time="5.453167999998186">
+    <testcase name="test_Creating_a_new_quote" lineno="27" classname="QuotesTest" assertions="4" time="3.3457450000005338" file="test/system/quotes_test.rb">
+    </testcase>
+    <testcase name="test_Showing_a_quote" lineno="19" classname="QuotesTest" assertions="1" time="0.6449929999998858" file="test/system/quotes_test.rb">
+    </testcase>
+    <testcase name="test_Deleting_a_quote" lineno="57" classname="QuotesTest" assertions="2" time="0.5810769999989134" file="test/system/quotes_test.rb">
+    </testcase>
+    <testcase name="test_Updating_a_quote" lineno="42" classname="QuotesTest" assertions="4" time="0.8813529999988532" file="test/system/quotes_test.rb">
+    </testcase>
+  </testsuite>
+</testsuites>
