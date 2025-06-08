@@ -68,4 +68,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "minitest-reporters"
+  gem 'guard'
+  gem 'guard-minitest'
 end
