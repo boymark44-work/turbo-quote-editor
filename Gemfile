@@ -36,7 +36,7 @@ gem "simple_form", "~> 5.1.0"
 gem "slim-rails"
 
 # Optional: Redis for Action Cable in production
-# gem "redis", ">= 4.0.1"
+gem "redis", ">= 4.0.1"
 
 # Optional: Kredis for higher-level Redis data types
 # gem "kredis"
@@ -67,4 +67,7 @@ group :test do
   # System testing
   gem "capybara"
   gem "selenium-webdriver"
+  gem "minitest-reporters"
+  gem 'guard'
+  gem 'guard-minitest'
 end

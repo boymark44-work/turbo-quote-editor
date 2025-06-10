@@ -1,2 +1,9 @@
+<%# Block syntax incase our lines are too long. Just take the Hashtag to uncomment. %>
+
+<%#= turbo_stream.prepend "quotes" do %>
+    <%#= render @quote %>
+<%# end %>
+
+
 <%= turbo_stream.prepend "quotes", @quote %>
 <%= turbo_stream.update Quote.new, "" %>
