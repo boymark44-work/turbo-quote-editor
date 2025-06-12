@@ -6,4 +6,6 @@ class User < ApplicationRecord
   # :database_authenticatable - To sign in users
   # :validatable - To validate email and password using devise's built-in validations
   devise :database_authenticatable, :validatable
+
+  belongs_to :company
 end
