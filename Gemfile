@@ -47,6 +47,10 @@ gem "redis", ">= 4.0.1"
 # Optional: Active Storage variants/image processing
 # gem "image_processing", "~> 1.2"
 
+# Adding Devise Gem for User Authentication
+gem 'devise', '~> 4.9', '>= 4.9.4'
+
+
 group :development, :test do
   # Debugging
   gem "debug", platforms: %i[ mri windows ]
