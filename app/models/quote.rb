@@ -13,5 +13,7 @@ class Quote < ApplicationRecord
 
   # This single-line is equivalent to broadcast create, update, and destroy which is the code above. 
   # Applying this syntactic sugar means that we want to broadcast quote creation, updates, and deletions to the "quotes" stream asynchronously.
-  broadcasts_to -> (quote) { "quotes" }, inserts_by: :prepend
+  broadcasts_to -> (quote) { [quote.company, "quotes"] }, inserts_by: :prepend
+
+  belongs_to :company
 end
