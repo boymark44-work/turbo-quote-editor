@@ -11,10 +11,10 @@ class QuotesTest < ApplicationSystemTestCase
   
   # Setup for the first entry
   setup do
-    # Order the quotes from the newest first
+    login_as users(:accountant)
     @quote = Quote.ordered.first
   end
-
+  
   # First Test: Showing a quote
   test "Showing a quote" do 
     visit quotes_path 

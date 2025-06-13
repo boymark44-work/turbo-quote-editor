@@ -8,4 +8,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :validatable
 
   belongs_to :company
+
+  # Add a name method to our User model
+  def name
+    email.split("@").first.capitalize
+  end
 end
